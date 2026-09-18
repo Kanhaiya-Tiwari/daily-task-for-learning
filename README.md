@@ -5,13 +5,13 @@
 
 **Date (UTC):** 2026-09-18
 
-> Small, frequent improvements beat large, risky changes.
+> Reliable systems are designed, not wished into existence.
 
-**Linux command:** `du -sh *`  
-Show the size of each item in the current directory.
+**Linux command:** `ps aux --sort=-%mem | head`  
+Show the most memory-hungry processes.
 
-**Python tip:** Use `pathlib.Path` instead of manually joining file-system strings.
+**Python tip:** Prefer f-strings for clear, readable string interpolation.
 
-**Motivation:** Curiosity is a powerful debugging tool. 🌱
-<!-- Daily refresh 2 of 5 -->
+**Motivation:** Every reliable release started as a thoughtful first step. 🔥
+<!-- Daily refresh 3 of 5 -->
 <!-- DAILY-DEVOPS-DOSE:END -->
