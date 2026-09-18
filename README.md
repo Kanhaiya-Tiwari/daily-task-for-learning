@@ -5,13 +5,13 @@
 
 **Date (UTC):** 2026-09-18
 
-> Small, frequent improvements beat large, risky changes.
+> You build it, you run it, you improve it.
 
-**Linux command:** `ps aux --sort=-%mem | head`  
-Show the most memory-hungry processes.
+**Linux command:** `find . -type f -name '*.log'`  
+Find all log files below the current directory.
 
-**Python tip:** Use a context manager (`with`) to close files reliably.
+**Python tip:** Use `dict.get(key, default)` when a missing key is expected.
 
-**Motivation:** Consistency turns good habits into durable systems. 🔥
-<!-- Daily refresh 3 of 3 -->
+**Motivation:** The best time to simplify a workflow is before it becomes urgent. 🌱
+<!-- Daily refresh 1 of 5 -->
 <!-- DAILY-DEVOPS-DOSE:END -->
