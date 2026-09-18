@@ -1,0 +1,55 @@
+name: Update daily README
+
+on:
+  schedule:
+    # GitHub Actions schedules use UTC.
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-readme-update
+  cancel-in-progress: false
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Create and push daily README-only commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Choose an inclusive random count from 3 through 6 for this daily run.
+          COMMIT_COUNT=$(( (RANDOM % 4) + 3 ))
+          echo "Creating ${COMMIT_COUNT} README-only daily commits."
+
+          for UPDATE_NUMBER in $(seq 1 "$COMMIT_COUNT"); do
+            python scripts/update_readme.py \
+              --update-number "$UPDATE_NUMBER" \
+              --total-updates "$COMMIT_COUNT"
+
+            # Only README.md is staged and included in each commit.
+            git add -- README.md
+            if git diff --cached --quiet -- README.md; then
+              echo "README.md unexpectedly did not change."
+              exit 1
+            fi
+            git commit --only \
+              -m "chore: refresh daily README (${UPDATE_NUMBER}/${COMMIT_COUNT})" \
+              -- README.md
+          done
+
+          # Push the complete, 3–6 commit batch once all commits have succeeded.
+          git push
