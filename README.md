@@ -5,13 +5,13 @@
 
 **Date (UTC):** 2026-09-18
 
-> You build it, you run it, you improve it.
+> Small, frequent improvements beat large, risky changes.
 
-**Linux command:** `find . -type f -name '*.log'`  
-Find all log files below the current directory.
+**Linux command:** `du -sh *`  
+Show the size of each item in the current directory.
 
-**Python tip:** Use `dict.get(key, default)` when a missing key is expected.
+**Python tip:** Use `pathlib.Path` instead of manually joining file-system strings.
 
-**Motivation:** The best time to simplify a workflow is before it becomes urgent. 🌱
-<!-- Daily refresh 1 of 5 -->
+**Motivation:** Curiosity is a powerful debugging tool. 🌱
+<!-- Daily refresh 2 of 5 -->
 <!-- DAILY-DEVOPS-DOSE:END -->
