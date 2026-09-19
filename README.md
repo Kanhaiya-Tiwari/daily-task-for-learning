@@ -5,13 +5,13 @@
 
 **Date (UTC):** 2026-09-19
 
-> Reliable systems are designed, not wished into existence.
+> Small, frequent improvements beat large, risky changes.
 
-**Linux command:** `grep -RIn 'TODO' .`  
-Recursively find TODOs with line numbers.
+**Linux command:** `find . -type f -name '*.log'`  
+Find all log files below the current directory.
 
-**Python tip:** Prefer f-strings for clear, readable string interpolation.
+**Python tip:** Use `dict.get(key, default)` when a missing key is expected.
 
-**Motivation:** Every reliable release started as a thoughtful first step. 🌱
-<!-- Daily refresh 2 of 5 -->
+**Motivation:** Every reliable release started as a thoughtful first step. 💡
+<!-- Daily refresh 3 of 5 -->
 <!-- DAILY-DEVOPS-DOSE:END -->
