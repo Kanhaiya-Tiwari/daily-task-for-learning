@@ -7,11 +7,11 @@
 
 > Small, frequent improvements beat large, risky changes.
 
-**Linux command:** `find . -type f -name '*.log'`  
-Find all log files below the current directory.
+**Linux command:** `ps aux --sort=-%mem | head`  
+Show the most memory-hungry processes.
 
-**Python tip:** Use `dict.get(key, default)` when a missing key is expected.
+**Python tip:** Prefer f-strings for clear, readable string interpolation.
 
-**Motivation:** Every reliable release started as a thoughtful first step. 💡
-<!-- Daily refresh 3 of 5 -->
+**Motivation:** Consistency turns good habits into durable systems. 🌱
+<!-- Daily refresh 4 of 5 -->
 <!-- DAILY-DEVOPS-DOSE:END -->
