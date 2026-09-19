@@ -5,13 +5,13 @@
 
 **Date (UTC):** 2026-09-19
 
-> Small, frequent improvements beat large, risky changes.
+> Reliable systems are designed, not wished into existence.
 
-**Linux command:** `ps aux --sort=-%mem | head`  
-Show the most memory-hungry processes.
+**Linux command:** `find . -type f -name '*.log'`  
+Find all log files below the current directory.
 
-**Python tip:** Prefer f-strings for clear, readable string interpolation.
+**Python tip:** Use `pathlib.Path` instead of manually joining file-system strings.
 
-**Motivation:** Consistency turns good habits into durable systems. 🌱
-<!-- Daily refresh 4 of 5 -->
+**Motivation:** Every reliable release started as a thoughtful first step. 🌱
+<!-- Daily refresh 5 of 5 -->
 <!-- DAILY-DEVOPS-DOSE:END -->
