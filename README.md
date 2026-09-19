@@ -3,15 +3,15 @@
 <!-- DAILY-DEVOPS-DOSE:START -->
 ## Daily DevOps Dose
 
-**Date (UTC):** 2026-09-18
+**Date (UTC):** 2026-09-19
 
-> You build it, you run it, you improve it.
+> Observability turns guessing into understanding.
 
-**Linux command:** `du -sh *`  
-Show the size of each item in the current directory.
+**Linux command:** `grep -RIn 'TODO' .`  
+Recursively find TODOs with line numbers.
 
-**Python tip:** Use `pathlib.Path` instead of manually joining file-system strings.
+**Python tip:** Use `dict.get(key, default)` when a missing key is expected.
 
-**Motivation:** Curiosity is a powerful debugging tool. ⚙️
-<!-- Daily refresh 5 of 5 -->
+**Motivation:** Curiosity is a powerful debugging tool. 🌱
+<!-- Daily refresh 1 of 5 -->
 <!-- DAILY-DEVOPS-DOSE:END -->
