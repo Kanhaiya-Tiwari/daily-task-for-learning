@@ -5,13 +5,13 @@
 
 **Date (UTC):** 2026-09-19
 
-> Observability turns guessing into understanding.
+> Reliable systems are designed, not wished into existence.
 
 **Linux command:** `grep -RIn 'TODO' .`  
 Recursively find TODOs with line numbers.
 
-**Python tip:** Use `dict.get(key, default)` when a missing key is expected.
+**Python tip:** Prefer f-strings for clear, readable string interpolation.
 
-**Motivation:** Curiosity is a powerful debugging tool. 🌱
-<!-- Daily refresh 1 of 5 -->
+**Motivation:** Every reliable release started as a thoughtful first step. 🌱
+<!-- Daily refresh 2 of 5 -->
 <!-- DAILY-DEVOPS-DOSE:END -->
